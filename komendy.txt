@@ -1,0 +1,7 @@
+﻿nu-html-checker *.html
+
+
+sass style.scss:style.css --sourcemap
+
+autoprefixer-cli -o  style.prefixed.css style.css
+
