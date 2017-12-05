@@ -447,6 +447,13 @@ header {
 }
     
 
+<<<<<<< HEAD
+=======
+    a:hover {
+nav>ul>li {
+	margin-top: 0px;
+}
+>>>>>>> 3dc929ea905d62b99cc1149b406adbd5e1d0e2a5
 
 header>nav ul {
 	padding: 0;
@@ -472,6 +479,14 @@ header>nav ul>li>a {
 	text-transform: uppercase;
 }
 
+<<<<<<< HEAD
+=======
+    .row-gallery img:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+>>>>>>> 3dc929ea905d62b99cc1149b406adbd5e1d0e2a5
 }
 .image-wrapper{
     &:hover .image-text {
@@ -498,9 +513,12 @@ header>nav ul>li>a {
 	    margin-bottom: 0;
 }
 }
+<<<<<<< HEAD
 
 .gallery .col-m-2 {
 	padding: 0;
 }
 }
 
+=======
+>>>>>>> 3dc929ea905d62b99cc1149b406adbd5e1d0e2a5
