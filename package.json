@@ -24,7 +24,7 @@
     "build:clean": "rimraf libs/*.css",
     "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:sass": "sass --sourcemap=none --update libs:css",
-    "build:autoprefixer": "autoprefixer-cli -o style.prefixed.css libs/style.css"
+    "build:autoprefixer": "cd libs && autoprefixer-cli -o libs/style.prefixed.css libs/style.css && cd .."
   },
   "repository": {
     "type": "git",
