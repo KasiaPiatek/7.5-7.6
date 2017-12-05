@@ -20,11 +20,11 @@
     "watch": "browser-sync start --server --files libs/*.css *.html",
     "watch:browsersync": "npm run watch",
     "watch:sass": "sass --watch sass:css",
-    "watch:autoprefixer": "onchange -d 100 libs/style.css -- autoprefixer-cli -o libs/style.prefixed.css libs/style.css",
-    "build:clean": "rimraf libs/*.css",
+    "watch:autoprefixer": "onchange -d 100 libs/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
+    "build:clean": "rimraf css/*.css",
     "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
-    "build:sass": "sass --sourcemap=none --update libs:css",
-    "build:autoprefixer": "cd libs && autoprefixer-cli -o libs/style.prefixed.css libs/style.css && cd .."
+    "build:sass": "sass --sourcemap=none --update scss:css",
+    "build:autoprefixer": "autoprefixer-cli -o css/style.prefixed.css css/style.css"
   },
   "repository": {
     "type": "git",
